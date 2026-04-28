@@ -1,0 +1,21 @@
+{
+  "name": "ubg-backend",
+  "version": "1.0.0",
+  "description": "UBG Bid Platform Backend with database automation and app login",
+  "main": "server.js",
+  "scripts": {
+    "prestart": "node db/migrate.js",
+    "start": "node server.js",
+    "db:migrate": "node db/migrate.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3"
+  }
+}
